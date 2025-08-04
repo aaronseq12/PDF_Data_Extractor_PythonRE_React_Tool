@@ -1,0 +1,130 @@
+/* Description: Global styles and Baker Hughes branding */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bh-primary-green: #006F43;
+  --bh-secondary-green: #00A75D;
+  --bh-accent-teal: #00B0B9;
+  --bh-light-gray: #F0F2F5;
+  --bh-medium-gray: #D9D9D9;
+  --bh-dark-gray: #333333;
+  --bh-white: #FFFFFF;
+  --bh-black: #000000;
+  --bh-error-red: #D93025;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, #root {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bh-light-gray);
+  color: var(--bh-dark-gray);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.app-container {
+    background-image: url('/opening_keynote_energizing_change.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid var(--bh-medium-gray);
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--bh-medium-gray);
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bh-primary-green);
+    color: var(--bh-white);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 12px rgba(0, 111, 67, 0.2);
+}
+
+.primary-button:hover {
+    background-color: #005a36;
+}
+
+.primary-button:active {
+    transform: scale(0.98);
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: var(--bh-secondary-green);
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    background: var(--bh-white);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: var(--bh-primary-green);
+    color: var(--bh-white);
+    padding: 12px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--bh-medium-gray);
+    font-size: 14px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
