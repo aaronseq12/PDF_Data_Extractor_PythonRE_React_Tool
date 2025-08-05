@@ -1,7 +1,5 @@
 # PDF Data Extractor Tool
  
-![BH Logo](public/bhi-logo.png)
- 
 An internal tool designed to streamline the process of extracting structured data from PDF documents. This application provides a user-friendly interface for uploading files, processing them through a backend script, and viewing the extracted information in a clear, tabular format. It also includes user authentication and an audit trail for tracking activities.
  
 ## ✨ Features
