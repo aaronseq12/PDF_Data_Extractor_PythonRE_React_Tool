@@ -1,0 +1,232 @@
+/* General Styles */
+:root {
+  --bh-primary-green: #006F43;
+  --bh-secondary-green: #00A75D;
+  --bh-accent-teal: #00B0B9;
+  --bh-light-gray: #F0F2F5;
+  --bh-medium-gray: #D9D9D9;
+  --bh-dark-gray: #333333;
+  --bh-white: #FFFFFF;
+  --bh-error-red: #D93025;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bh-light-gray);
+  color: var(--bh-dark-gray);
+  margin: 0;
+}
+
+.app-container {
+  background-image: url('/opening_keynote_energizing_change.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Auth Page */
+.auth-page .form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.auth-page .logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.auth-page h2 {
+  margin-bottom: 10px;
+  color: var(--bh-primary-green);
+  font-weight: 600;
+}
+
+.auth-page p {
+  margin-bottom: 30px;
+}
+
+.auth-page .link-button {
+  background: none;
+  border: none;
+  color: var(--bh-secondary-green);
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Dashboard Page */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bh-primary-green);
+  color: var(--bh-white);
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+}
+
+.main-content {
+  padding: 40px;
+}
+
+.file-uploader {
+  text-align: center;
+}
+
+.file-list {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--bh-white);
+  border-radius: 8px;
+  border: 1px dashed var(--bh-medium-gray);
+}
+
+.file-list h4 {
+  text-align: left;
+  margin-bottom: 15px;
+  color: var(--bh-primary-green);
+}
+
+.file-list ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bh-light-gray);
+}
+
+/* Data Display Page */
+.data-display-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.data-display-header h2 {
+  color: var(--bh-primary-green);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.extract-more-button {
+  margin-top: 30px;
+}
+
+/* Common Components */
+.input-field {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--bh-medium-gray);
+  font-size: 16px;
+}
+
+.primary-button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--bh-primary-green);
+  color: var(--bh-white);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #005a36;
+}
+
+.primary-button:disabled {
+  background-color: var(--bh-medium-gray);
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: var(--bh-error-red);
+}
+
+.success-message {
+  color: var(--bh-secondary-green);
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 8px solid var(--bh-light-gray);
+  border-top: 8px solid var(--bh-primary-green);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Table */
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  background: var(--bh-white);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.styled-table th {
+  background-color: var(--bh-primary-green);
+  color: var(--bh-white);
+  padding: 12px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--bh-medium-gray);
+  font-size: 14px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
